@@ -1,0 +1,20 @@
+// markdownlint 設定
+//
+// このリポジトリは Claude 用の「開発プロセス定義」ドキュメント集で、
+// 読みやすさのために次の体裁を意図的・一貫して採用している：
+//   - フェーズごとに同名の見出し（## 目的 / ## 完了条件 / ### 🔒 承認ゲート / ### Claudeが行うこと など）を繰り返す
+//   - 各手順を **Step X:** というミニ見出しで表す
+//   - サマリーや図を、言語指定なしのコードフェンス（ASCIIボックス）で記述する
+//   - 表をコンパクト体裁で書く
+//
+// これらは markdownlint の既定ルールと衝突し警告を多発させるため、
+// 体裁を維持したまま該当ルールのみを無効化する。
+{
+  "MD022": false, // blanks-around-headings: 見出し直後に箇条書き・図を続ける体裁を許可
+  "MD024": false, // no-duplicate-heading: フェーズごとに同名見出しを繰り返す体裁を許可
+  "MD031": false, // blanks-around-fences: 箇条書き内にコードフェンス（ボックス）を置く体裁を許可
+  "MD032": false, // blanks-around-lists: Step 見出し直後に箇条書きを続ける体裁を許可
+  "MD036": false, // no-emphasis-as-heading: **Step X:** をミニ見出しとして使う体裁を許可
+  "MD040": false, // fenced-code-language: ASCIIボックスに言語指定を求めない
+  "MD060": false  // table-column-style: コンパクトな表記を許可
+}
