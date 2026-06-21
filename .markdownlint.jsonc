@@ -10,6 +10,7 @@
 // これらは markdownlint の既定ルールと衝突し警告を多発させるため、
 // 体裁を維持したまま該当ルールのみを無効化する。
 {
+  "MD013": false, // line-length: 日本語の密な記述・横長の表・ASCIIボックスで行長80超を許可
   "MD022": false, // blanks-around-headings: 見出し直後に箇条書き・図を続ける体裁を許可
   "MD024": false, // no-duplicate-heading: フェーズごとに同名見出しを繰り返す体裁を許可
   "MD031": false, // blanks-around-fences: 箇条書き内にコードフェンス（ボックス）を置く体裁を許可
